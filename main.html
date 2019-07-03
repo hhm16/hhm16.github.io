@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<style>
+*
+{
+    margin:0px;
+    padding: 0px;
+}
+html,body
+{
+    margin: 0px;
+    width:100%;
+    height:100%;
+}
+body
+{
+  background: url("timg.jpg");
+  background-attachment: fixed;
+}
+.row
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+.row>.back1
+{
+  width:30%;
+  height:100%;
+  background-color:rgba(128,128,128,0.6);
+  text-align: center;
+}
+.row>.back2
+{
+  width:30%;
+  height:100%;
+}
+.title
+{
+  width:100%;
+  height:10%;
+  text-align:center;
+  background-color:purple;
+  color: white;
+}
+.title>h1
+{
+  width:100%;
+  height:100%;
+}
+.col
+{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.col0
+{
+  width:40%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  background-color:white;
+}
+.photo
+{
+  width:100%;
+  height:50%;
+  background-color:white;
+  text-align: center;
+}
+.introduce
+{
+  width:100%;
+  height:30%;
+}
+.introduce>h2
+{
+  color:black;
+  text-align: center;
+  font-weight: bold;
+}
+p.ps
+{
+  color:red;
+  font-weight: bold;
+}
+.col0>.box
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+p
+{
+  text-indent: 2em;
+}
+a:hover
+{
+  color: red;
+}
+</style>
+</head>
+<body>
+<div class="col">
+  <div class="title">
+    <h1>黄浩勉的个人主页</h1>
+  </div>
+  <div class="row">
+    <div class="back1">
+      <h3>最近更新的日志</h3>
+      <h4><a href="#anchor">2019.07.03</a></h4>
+    </div>
+    <div class="col0">
+      <div class="photo">
+        <img src="1562082270003.jpeg" alt="我的照片" width=100% height=100%>
+      </div>
+      <div class="introduce" style="border-bottom: solid 2px">
+        <h2>自我介绍</h2>
+        <p>大家好，我是来自重庆的黄浩勉，这是我的个人网站，现在就读于清华大学软件学院
+            ，刚入学的时候并非学的计算机方向，不过因为后面对编程比较感兴趣，并且在大一上了软院的一门专业基础课之后感觉
+            软院的教学挺有趣的因此就转系加入了，这个网站使我们小学期的一次实验。我空余时间比较喜欢玩游戏，PC，
+            PS4，switch等平台或者主机的游戏都有接触，欢迎各位来加我好友。
+        </p>
+        <p class="ps">虽然喜欢玩游戏，但是来到软件学院之后发现，只要大作业是做游戏，那就最痛苦啊。
+        <a href="javascript:showInfo()" id="a1">点击查看更多个人信息嗷</a></p>
+        <p id="moreInfo"></p>
+      </div>
+      <div class="box" style="background-color: white">
+        <h1 style="text-align: center">个人日志</h1>
+        <img src="timg (1).jpg" alt="日志照片" width=100% >
+        <h2 style="text-align: center">2019.7.3 HTML与CSS的学习与实践</h2>
+        <a name="anchor"></a>
+        <p>现在学习了HTML和CSS的相关知识，感觉和之前学的所有语言都很不一样啊，之前曾经在大作业的时候接触过处理网页的HTML文本内容，当时只是
+            粗浅的学了一些皮毛，并且自己也没有写过，等到自己上手的时候才发现，细节太多了，基本上每次要想实现某个功能，就得上网去查，不像C语言，一来就能上手，HTML基本上是边写边查，边做边学，而且
+            作业任务量也不小。不过希望通过小学期的实践，能够初步掌握这门语言。之前一直分不清楚什么是前端什么是后端，现在我的理解就是能够让用户
+            看到的就是前端，看不到的就是后端，不知道我的理解对不对<a href="info.html">点击查看学习任务详情</a>
+        </p>
+      </div>
+    </div>
+    <div class="back2">
+    </div>  
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+var t=true;
+function showInfo()
+{
+  console.log(2333);
+  if(t==true)
+  {
+    document.getElementById("moreInfo").append("学号:2016***574 QQ:252***547");
+    t=false;
+  }
+}
+</script>
+</html>
